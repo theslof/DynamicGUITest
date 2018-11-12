@@ -1,0 +1,116 @@
+[
+  {
+    "title": "Panel 1",
+    "gridx": 0,
+    "gridy": 0,
+    "gridWidth": 1,
+    "buttons": [
+      {
+        "label": "Button 1",
+        "gridx": 0,
+        "gridy": 0,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 2",
+        "gridx": 1,
+        "gridy": 0,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 3",
+        "gridx": 0,
+        "gridy": 1,
+        "gridWidth": 2
+      },
+      {
+        "label": "Button 4",
+        "gridx": 0,
+        "gridy": 2,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 5",
+        "gridx": 1,
+        "gridy": 2,
+        "gridWidth": 1
+      }
+    ]
+  },
+  {
+    "title": "Panel 2",
+    "gridx": 1,
+    "gridy": 0,
+    "gridWidth": 1,
+    "buttons": [
+      {
+        "label": "Button 1",
+        "gridx": 0,
+        "gridy": 0,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 2",
+        "gridx": 1,
+        "gridy": 0,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 3",
+        "gridx": 0,
+        "gridy": 1,
+        "gridWidth": 2
+      },
+      {
+        "label": "Button 4",
+        "gridx": 0,
+        "gridy": 2,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 5",
+        "gridx": 1,
+        "gridy": 2,
+        "gridWidth": 1
+      }
+    ]
+  },
+  {
+    "title": "Panel 3",
+    "gridx": 0,
+    "gridy": 1,
+    "gridWidth": 1,
+    "buttons": [
+      {
+        "label": "Button 1",
+        "gridx": 0,
+        "gridy": 0,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 2",
+        "gridx": 1,
+        "gridy": 0,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 3",
+        "gridx": 0,
+        "gridy": 1,
+        "gridWidth": 2
+      },
+      {
+        "label": "Button 4",
+        "gridx": 0,
+        "gridy": 2,
+        "gridWidth": 1
+      },
+      {
+        "label": "Button 5",
+        "gridx": 1,
+        "gridy": 2,
+        "gridWidth": 1
+      }
+    ]
+  }
+]
