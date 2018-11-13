@@ -11,38 +11,20 @@ public class MainWindow extends JFrame {
     public MainWindow(List<JSONPanel> panels) {
         setTitle("Dynamic GUI Test");
 
-        GridBagLayout layout = new GridBagLayout();
-        this.setLayout(layout);
-
-        GridBagConstraints gbc = new GridBagConstraints();
-        gbc.fill = GridBagConstraints.BOTH;
-        gbc.weightx = 1;
-        gbc.weighty = 1;
+        this.setLayout(new GridBagLayout());
 
         panels.forEach(jsonpanel -> {
             JPanel panel = new JPanel();
-            panel.setBorder(new TitledBorder(jsonpanel.getTitle()));
-            gbc.gridx = jsonpanel.getGridx();
-            gbc.gridy = jsonpanel.getGridy();
-            gbc.gridwidth = jsonpanel.getGridWidth();
-            this.add(panel, gbc);
+            panel.setBorder(new TitledBorder(jsonpanel.title));
+            this.add(panel, jsonpanel.getConstraints());
 
-            GridBagLayout panellayout = new GridBagLayout();
-            panel.setLayout(panellayout);
-            GridBagConstraints panelgbc = new GridBagConstraints();
-            panelgbc.fill = GridBagConstraints.BOTH;
-            panelgbc.weightx = 1;
-            panelgbc.weighty = 1;
+            panel.setLayout(new GridBagLayout());
 
-            jsonpanel.getButtons().forEach(jsonbutton -> {
-                JButton button = new JButton(jsonbutton.getLabel());
-                panelgbc.gridx = jsonbutton.getGridx();
-                panelgbc.gridy = jsonbutton.getGridy();
-                panelgbc.gridwidth = jsonbutton.getGridWidth();
-                panel.add(button, panelgbc);
-                button.addActionListener(e -> {
-                    System.out.println("You pressed button " + jsonbutton.getLabel() + " in panel " + jsonpanel.getTitle());
-                });
+            jsonpanel.buttons.forEach(jsonbutton -> {
+                JButton button = new JButton(jsonbutton.label);
+                panel.add(button, jsonbutton.getConstraints());
+                button.addActionListener(e -> System.out.println("You pressed button " + jsonbutton.label +
+                        " in panel " + jsonpanel.title));
             });
         });
 

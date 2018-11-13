@@ -3,37 +3,36 @@
     "title": "Panel 1",
     "gridx": 0,
     "gridy": 0,
-    "gridWidth": 1,
     "buttons": [
       {
-        "label": "Button 1",
-        "gridx": 0,
-        "gridy": 0,
-        "gridWidth": 1
-      },
-      {
-        "label": "Button 2",
+        "label": "Up",
         "gridx": 1,
         "gridy": 0,
-        "gridWidth": 1
+        "ipady": 40
       },
       {
-        "label": "Button 3",
+        "label": "Left",
         "gridx": 0,
         "gridy": 1,
-        "gridWidth": 2
+        "ipady": 40
       },
       {
-        "label": "Button 4",
-        "gridx": 0,
-        "gridy": 2,
-        "gridWidth": 1
+        "label": "OK",
+        "gridx": 1,
+        "gridy": 1,
+        "ipady": 40
       },
       {
-        "label": "Button 5",
+        "label": "Right",
+        "gridx": 2,
+        "gridy": 1,
+        "ipady": 40
+      },
+      {
+        "label": "Down",
         "gridx": 1,
         "gridy": 2,
-        "gridWidth": 1
+        "ipady": 40
       }
     ]
   },
@@ -41,37 +40,37 @@
     "title": "Panel 2",
     "gridx": 1,
     "gridy": 0,
-    "gridWidth": 1,
+    "gridwidth": 1,
     "buttons": [
       {
         "label": "Button 1",
         "gridx": 0,
         "gridy": 0,
-        "gridWidth": 1
+        "gridwidth": 1
       },
       {
         "label": "Button 2",
         "gridx": 1,
         "gridy": 0,
-        "gridWidth": 1
+        "gridwidth": 1
       },
       {
         "label": "Button 3",
         "gridx": 0,
         "gridy": 1,
-        "gridWidth": 2
+        "gridwidth": 2
       },
       {
         "label": "Button 4",
         "gridx": 0,
         "gridy": 2,
-        "gridWidth": 1
+        "gridwidth": 1
       },
       {
         "label": "Button 5",
         "gridx": 1,
         "gridy": 2,
-        "gridWidth": 1
+        "gridwidth": 1
       }
     ]
   },
@@ -79,37 +78,43 @@
     "title": "Panel 3",
     "gridx": 0,
     "gridy": 1,
-    "gridWidth": 1,
+    "gridwidth": 1,
     "buttons": [
       {
         "label": "Button 1",
         "gridx": 0,
         "gridy": 0,
-        "gridWidth": 1
+        "gridwidth": 1
       },
       {
         "label": "Button 2",
-        "gridx": 1,
-        "gridy": 0,
-        "gridWidth": 1
+        "gridx": 0,
+        "gridy": 1,
+        "gridwidth": 1
       },
       {
         "label": "Button 3",
         "gridx": 0,
-        "gridy": 1,
-        "gridWidth": 2
+        "gridy": 2,
+        "gridwidth": 1
       },
       {
         "label": "Button 4",
-        "gridx": 0,
+        "gridx": 1,
         "gridy": 2,
-        "gridWidth": 1
+        "gridwidth": 1
       },
       {
         "label": "Button 5",
         "gridx": 1,
-        "gridy": 2,
-        "gridWidth": 1
+        "gridy": 1,
+        "gridwidth": 1
+      },
+      {
+        "label": "Button 6",
+        "gridx": 1,
+        "gridy": 0,
+        "gridwidth": 1
       }
     ]
   }

@@ -1,32 +1,32 @@
 package com.company.json;
 
+import java.awt.*;
 import java.util.List;
 
 public class JSONPanel {
-    private String title;
-    private int gridx;
-    private int gridy;
-    private int gridWidth;
+    public String title;
+    public Integer gridx = 0;
+    public Integer gridy = 0;
+    public Integer gridwidth = 1;
+    public Integer gridheight = 1;
+    public Integer ipadx = 0;
+    public Integer ipady = 0;
+    public Integer weightx = 0;
+    public Integer weighty = 0;
 
-    private List<JSONButton> buttons;
+    public List<JSONButton> buttons;
 
-    public String getTitle() {
-        return title;
-    }
-
-    public int getGridx() {
-        return gridx;
-    }
-
-    public int getGridy() {
-        return gridy;
-    }
-
-    public int getGridWidth() {
-        return gridWidth;
-    }
-
-    public List<JSONButton> getButtons() {
-        return buttons;
+    public GridBagConstraints getConstraints() {
+        GridBagConstraints gbc = new GridBagConstraints();
+        gbc.fill = GridBagConstraints.NONE;
+        gbc.gridx = this.gridx;
+        gbc.gridy = this.gridy;
+        gbc.gridwidth = this.gridwidth;
+        gbc.gridheight = this.gridheight;
+        gbc.ipadx = this.ipadx;
+        gbc.ipady = this.ipady;
+        gbc.weightx = this.weightx;
+        gbc.weighty = this.weighty;
+        return gbc;
     }
 }
